@@ -1,0 +1,55 @@
+.container {
+  max-width: 768px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.canvasContainer {
+  width: 100%;
+  height: 400px;
+  background-color: #f3f4f6;
+  border-radius: 1rem;
+  box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+.imageContainer {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.imageButton {
+  border: 4px solid #d1d5db;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+
+.imageButton:hover {
+  transform: scale(1.05);
+}
+
+.selected {
+  border-color: #3b82f6;
+}
+
+.image {
+  object-fit: cover;
+  width: 6rem;
+  height: 6rem;
+}
+
+.guessButton {
+  margin-top: 2rem;
+  background-color: #3b82f6;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.75rem;
+  transition: background-color 0.2s ease;
+}
+
+.guessButton:hover {
+  background-color: #2563eb;
+}

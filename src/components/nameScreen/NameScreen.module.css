@@ -1,0 +1,70 @@
+.screen {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(-45deg, #00c6ff, #0072ff, #00c6ff, #0072ff);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
+    flex-direction: column;
+  }
+  
+  .input {
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+  .button {
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #4caf50;
+    color: #fff;
+  }
+  
+  .button:disabled {
+    background-color: #777;
+    cursor: default;
+  }
+  
+  @keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+
+  @keyframes logoAnimation {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+  }
+
+  .logo {
+    font-family: 'Arial', sans-serif;
+    font-size: 64px;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    animation: logoAnimation 2.5s infinite ease-in-out;
+    user-select: none;
+    margin-bottom: 30px;
+  }
+
+  .logo-shadow {
+    color: #00c6ff;
+  }
+
+  .logo-oh {
+    color: #0072ff;
+  }
+  
+  
