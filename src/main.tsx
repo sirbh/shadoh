@@ -18,7 +18,7 @@ const rootRoute = createRootRoute({
 const indexRoute = createRoute({
   getParentRoute: () => rootRoute,
   path: '/',
-  component: GuessScreen,
+  component: NameScreen,
 })
 
 const routeTree = rootRoute.addChildren([indexRoute])
